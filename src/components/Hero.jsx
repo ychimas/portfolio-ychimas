@@ -3,7 +3,7 @@ import { motion, useReducedMotion, useScroll, useSpring, useTransform } from 'fr
 import { Github, Linkedin, ArrowDown, Download } from 'lucide-react'
 
 const roles = ['Desarrollador Full Stack', 'Ingeniero de Sistemas', 'Especialista en Nube']
-const profileImage = '/foto.png'
+const profileImage = './foto.png'
 
 export default function Hero() {
   const heroRef = useRef(null)

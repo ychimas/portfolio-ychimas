@@ -14,7 +14,7 @@ const stats = [
   { number: 'SQL', label: 'Bases de Datos', icon: Users },
 ]
 
-const profileImage = '/foto.png'
+const profileImage = './foto.png'
 
 const techLogos = [
   { name: 'Python', logo: 'https://img.icons8.com/external-tal-revivo-bold-tal-revivo/96/external-python-an-interpreted-high-level-general-purpose-programming-language-logo-bold-tal-revivo.png' },
