@@ -121,7 +121,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
-              className="text-foreground/70 text-lg max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed"
+              className="text-foreground/70 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed text-justify lg:text-left"
             >
               Desarrollador con experiencia en desarrollo web, administración de bases de datos y despliegue de aplicaciones en la nube. Me apasiona crear soluciones innovadoras y de alto rendimiento, combinando código limpio, diseño intuitivo y enfoque en resultados, mientras afronto nuevos retos para crecer profesionalmente.
             </motion.p>

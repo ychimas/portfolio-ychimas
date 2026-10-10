@@ -107,7 +107,7 @@ export default function About() {
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="space-y-6"
+            className="space-y-6 text-justify lg:text-left"
           >
             <h3 className="font-display text-2xl lg:text-3xl font-bold text-foreground">
               Sobre Mí
