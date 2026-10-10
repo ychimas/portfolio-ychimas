@@ -146,9 +146,9 @@ export default function About() {
                 transition={{ x: { duration: 25, repeat: Infinity, ease: 'linear' } }}
               >
                 {[...techRowOne, ...techRowOne].map((tech, index) => (
-                  <div key={`fila1-${index}`} className="flex-shrink-0 glass-card p-6 rounded-2xl flex flex-col items-center gap-3 min-w-[120px] hover-lift">
-                    <img src={tech.logo} alt={tech.name} className="w-12 h-12 object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(59%) sepia(93%) saturate(4086%) hue-rotate(153deg) brightness(96%) contrast(101%)' }} />
-                    <span className="text-foreground/80 font-medium">{tech.name}</span>
+                  <div key={`fila1-${index}`} className="flex-shrink-0 glass-card p-4 sm:p-6 rounded-2xl flex flex-col items-center gap-2 sm:gap-3 min-w-[100px] sm:min-w-[120px] hover-lift">
+                    <img src={tech.logo} alt={tech.name} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(59%) sepia(93%) saturate(4086%) hue-rotate(153deg) brightness(96%) contrast(101%)' }} />
+                    <span className="text-foreground/80 font-medium text-xs sm:text-sm">{tech.name}</span>
                   </div>
                 ))}
               </motion.div>
@@ -162,9 +162,9 @@ export default function About() {
                 transition={{ x: { duration: 25, repeat: Infinity, ease: 'linear' } }}
               >
                 {[...techRowTwo, ...techRowTwo].map((tech, index) => (
-                  <div key={`fila2-${index}`} className="flex-shrink-0 glass-card p-6 rounded-2xl flex flex-col items-center gap-3 min-w-[120px] hover-lift">
-                    <img src={tech.logo} alt={tech.name} className="w-12 h-12 object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(59%) sepia(93%) saturate(4086%) hue-rotate(153deg) brightness(96%) contrast(101%)' }} />
-                    <span className="text-foreground/80 font-medium">{tech.name}</span>
+                  <div key={`fila2-${index}`} className="flex-shrink-0 glass-card p-4 sm:p-6 rounded-2xl flex flex-col items-center gap-2 sm:gap-3 min-w-[100px] sm:min-w-[120px] hover-lift">
+                    <img src={tech.logo} alt={tech.name} className="w-10 h-10 sm:w-12 sm:h-12 object-contain" style={{ filter: 'brightness(0) saturate(100%) invert(59%) sepia(93%) saturate(4086%) hue-rotate(153deg) brightness(96%) contrast(101%)' }} />
+                    <span className="text-foreground/80 font-medium text-xs sm:text-sm">{tech.name}</span>
                   </div>
                 ))}
               </motion.div>

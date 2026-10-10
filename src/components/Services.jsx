@@ -70,14 +70,14 @@ export default function Services() {
               className="group"
             >
               <motion.div 
-                className="glass-card p-8 rounded-2xl h-full hover-lift border border-transparent hover:border-accent/30 transition-all"
+                className="glass-card p-5 sm:p-8 rounded-2xl h-full hover-lift border border-transparent hover:border-accent/30 transition-all"
                 whileHover={{ y: -5 }}
               >
                 <motion.div
-                  className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-accent/20 transition-colors"
+                  className="w-12 h-12 sm:w-16 sm:h-16 bg-accent/10 rounded-2xl flex items-center justify-center mb-4 sm:mb-6 group-hover:bg-accent/20 transition-colors"
                   whileHover={{ rotate: 5, scale: 1.05 }}
                 >
-                  <service.icon className="w-8 h-8 text-accent" />
+                  <service.icon className="w-6 h-6 sm:w-8 sm:h-8 text-accent" />
                 </motion.div>
 
                 <h3 className="font-display text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors">

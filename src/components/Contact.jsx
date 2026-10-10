@@ -86,8 +86,8 @@ export default function Contact() {
                   transition={{ delay: 0.3 + index * 0.1 }}
                   className="flex items-center gap-4 group"
                 >
-                  <div className="w-12 h-12 glass-card rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                    <info.icon className="w-5 h-5 text-accent" />
+                  <div className="w-10 h-10 sm:w-12 sm:h-12 glass-card rounded-xl flex items-center justify-center group-hover:bg-accent/20 transition-colors">
+                    <info.icon className="w-4 h-4 sm:w-5 sm:h-5 text-accent" />
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">{info.label}</p>

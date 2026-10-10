@@ -91,7 +91,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="inline-block px-4 py-2 bg-accent/10 border border-accent/30 rounded-full text-accent text-sm font-medium mb-6 backdrop-blur-sm shadow-[0_0_30px_rgba(212,165,116,0.12)]"
+              className="inline-block px-3 py-1.5 bg-accent/10 border border-accent/30 rounded-full text-accent text-xs sm:text-sm font-medium mb-4 sm:mb-6 backdrop-blur-sm shadow-[0_0_30px_rgba(212,165,116,0.12)] lg:static"
               style={{ y: badgeY }}
             >
               👋 Hola, bienvenido a mi portafolio
@@ -134,7 +134,7 @@ export default function Hero() {
             >
               <motion.a
                 href="#proyectos"
-                className="px-8 py-4 bg-accent text-background font-semibold rounded-full hover:bg-accent/90 transition-all inline-flex items-center gap-2"
+                className="px-5 py-3 sm:px-8 sm:py-4 bg-accent text-background text-sm sm:text-base font-semibold rounded-full hover:bg-accent/90 transition-all inline-flex items-center gap-2"
                 whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(201, 162, 39, 0.4)' }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -143,7 +143,7 @@ export default function Hero() {
 
               <motion.a
                 href="#contacto"
-                className="px-8 py-4 border-2 border-secondary/30 text-foreground font-semibold rounded-full hover:border-accent hover:text-accent transition-all inline-flex items-center gap-2"
+                className="px-5 py-3 sm:px-8 sm:py-4 border-2 border-secondary/30 text-foreground text-sm sm:text-base font-semibold rounded-full hover:border-accent hover:text-accent transition-all inline-flex items-center gap-2"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
@@ -164,7 +164,7 @@ export default function Hero() {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 flex items-center justify-center rounded-full border border-secondary/30 text-foreground/70 hover:text-accent hover:border-accent transition-all"
+                  className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full border border-secondary/30 text-foreground/70 hover:text-accent hover:border-accent transition-all"
                   whileHover={{ scale: 1.1, y: -3 }}
                   whileTap={{ scale: 0.9 }}
                   initial={{ opacity: 0, y: 20 }}

@@ -109,7 +109,7 @@ export default function Experience() {
             </h3>
 
             <div className="relative">
-              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-primary to-transparent" />
+              <div className="absolute left-3 sm:left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-primary to-transparent" />
               
               <div className="space-y-8">
                 {experiences.map((exp, index) => (
@@ -118,9 +118,9 @@ export default function Experience() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={inView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                    className="relative pl-12"
+                    className="relative pl-8 sm:pl-12"
                   >
-                    <div className="absolute left-0 w-8 h-8 bg-accent/20 border-2 border-accent rounded-full flex items-center justify-center text-accent">
+                    <div className="absolute left-0 w-6 h-6 sm:w-8 sm:h-8 bg-accent/20 border-2 border-accent rounded-full flex items-center justify-center text-accent">
                       <TimelineIcon type={exp.type} />
                     </div>
                     
@@ -162,7 +162,7 @@ export default function Experience() {
             </h3>
 
             <div className="relative">
-              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-primary to-transparent" />
+              <div className="absolute left-3 sm:left-4 top-0 bottom-0 w-0.5 bg-gradient-to-b from-accent via-primary to-transparent" />
               
               <div className="space-y-8">
                 {education.map((edu, index) => (
@@ -171,9 +171,9 @@ export default function Experience() {
                     initial={{ opacity: 0, x: 20 }}
                     animate={inView ? { opacity: 1, x: 0 } : {}}
                     transition={{ duration: 0.5, delay: 0.4 + index * 0.1 }}
-                    className="relative pl-12"
+                    className="relative pl-8 sm:pl-12"
                   >
-                    <div className="absolute left-0 w-8 h-8 bg-accent/20 border-2 border-accent rounded-full flex items-center justify-center text-accent">
+                    <div className="absolute left-0 w-6 h-6 sm:w-8 sm:h-8 bg-accent/20 border-2 border-accent rounded-full flex items-center justify-center text-accent">
                       <TimelineIcon type={edu.type} />
                     </div>
                     

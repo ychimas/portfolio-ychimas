@@ -218,7 +218,7 @@ export default function Projects() {
                   transition={{ duration: 0.3 }}
                   className="glass-card rounded-2xl overflow-hidden"
                 >
-                  <div className="relative h-64 overflow-hidden">
+                  <div className="relative h-44 sm:h-56 overflow-hidden">
                     <img
                       src={projects[currentIndex]?.image}
                       alt={projects[currentIndex]?.title}
@@ -226,20 +226,20 @@ export default function Projects() {
                     />
                   </div>
                   
-                  <div className="p-6">
-                    <h3 className="font-display text-xl font-bold text-foreground mb-2">
+                  <div className="p-4 sm:p-6">
+                    <h3 className="font-display text-lg sm:text-xl font-bold text-foreground mb-2">
                       {projects[currentIndex]?.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-4">
+                    <p className="text-muted-foreground text-sm mb-4 line-clamp-3">
                       {projects[currentIndex]?.description}
                     </p>
                     <div className="flex flex-wrap gap-2 mb-4">
                       {projects[currentIndex]?.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="inline-flex items-center gap-1.5 px-3 py-1 bg-muted text-foreground/70 text-xs rounded-full"
+                          className="inline-flex items-center gap-1.5 px-2.5 py-0.5 bg-muted text-foreground/70 text-xs rounded-full"
                         >
-                          <span className={`w-2 h-2 rounded-full ${getTagColor(tag)}`} />
+                          <span className={`w-1.5 h-1.5 rounded-full ${getTagColor(tag)}`} />
                           {tag}
                         </span>
                       ))}
@@ -247,15 +247,15 @@ export default function Projects() {
                     <div className="flex gap-3">
                       <a
                         href={projects[currentIndex]?.liveUrl}
-                        className="flex-1 py-3 bg-accent text-background text-center rounded-full font-medium"
+                        className="flex-1 py-2.5 bg-accent text-background text-center rounded-full font-medium text-sm"
                       >
                         Ver Proyecto
                       </a>
                       <a
                         href={projects[currentIndex]?.githubUrl}
-                        className="p-3 border border-secondary/30 rounded-full"
+                        className="p-2.5 border border-secondary/30 rounded-full"
                       >
-                        <Github size={20} />
+                        <Github size={18} />
                       </a>
                     </div>
                   </div>
